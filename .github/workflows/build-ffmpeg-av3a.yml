@@ -42,7 +42,37 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential pkg-config yasm nasm git ca-certificates curl
+          sudo apt-get install -y build-essential pkg-config yasm nasm git ca-certificates curl unzip wget cmake
+
+      - name: Install libuavs3d (AVS3 decoder)
+        if: runner.os == 'Linux'
+        run: |
+          set -e
+          # download uavs3d master zip from codeload as requested
+          TMPDIR=$(mktemp -d)
+          echo "Using temp dir: $TMPDIR"
+          cd "$TMPDIR"
+          wget -O uavs3d-master.zip https://codeload.github.com/uavs3/uavs3d/zip/refs/heads/master
+          unzip uavs3d-master.zip
+          # extracted folder name is usually uavs3d-master
+          SRC_DIR="$TMPDIR"/uavs3d-master
+          if [ ! -d "$SRC_DIR" ]; then
+            # try to find the extracted folder
+            SRC_DIR=$(find . -maxdepth 2 -type d -name "uavs3d*" | head -n1)
+          fi
+          echo "Source dir: $SRC_DIR"
+          cd "$SRC_DIR"
+          chmod +x version.sh || true
+          ./version.sh || true
+          mkdir -p build/linux
+          cd build/linux
+          # Configure with 10-bit support and shared libs; set install prefix to /usr/local
+          cmake -DCOMPILE_10BIT=1 -DBUILD_SHARED_LIBS=1 -DCMAKE_INSTALL_PREFIX=/usr/local ../..
+          make -j$(nproc)
+          sudo make install
+          # cleanup
+          cd /
+          rm -rf "$TMPDIR" || true
 
       - name: Build (auto-detect)
         run: |
