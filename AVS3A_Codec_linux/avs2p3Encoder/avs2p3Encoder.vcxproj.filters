@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\av3enc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\getcmdarg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\i2r_ec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\i2r_encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\i2r_lpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ky_midside.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ky_rice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lwt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\avs2BweDecMDFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\avs2BweEncMDFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\code_hf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\decode_hf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\mdftimdft4096.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\mdftimdfttable2048.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\mdftmultiblockanalysis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\mdftmultiblockanalysis_dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\supermdftanalysis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bweenc\supermdftanalysis_dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\avs2audio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\avs2encmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\bitrate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\bitstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\codebook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\crc_16.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\filterbank.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\FloatFR.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\floor_all.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\floor_books.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\general.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\highlevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\iir32resample.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\lfenc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\masking.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\maxcorr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\mc_rom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\mdftmultiblockanalysis_dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\os_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\pca.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\psy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\psych_44.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\registry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\res_books_uncoupled.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\resampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\residue_44u.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\scales.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\setup_44.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\setup_44u.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\sndfile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\streaminfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\encode\tns1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeD\enc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeD\general_encoder_3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeD\threeD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\avs2p3_encoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bs_util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encframe.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\getcmdarg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\i2r_ec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\i2r_encoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\i2r_lpc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ky_midside.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ky_rice.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lossless_encoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lwt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\avs2BweDecMDFT.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\avs2BweEncMDFT.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\code_hf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable128.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable256.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable512.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable1024.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable2048.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftimdfttable4096.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftmultiblockanalysis.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\mdftmultiblockanalysis_dec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bweenc\supermdftanalysis.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\bitrate.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\bitstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\codebook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\codectypeselect.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\crc_16.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\floor1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\general_encoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\iir32resample.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\info.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\lfenc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\maxcorr3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\mc_rom1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\pca.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\psy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\registry.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\res0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\resampler.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\sharedbook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\tns.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\encode\wavefiletools.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\general_encoder_3D.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\ob_raw_data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\ob_raw_Info.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\objgeneral_encoder_3D.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\threeD.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\avs2p3_encoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

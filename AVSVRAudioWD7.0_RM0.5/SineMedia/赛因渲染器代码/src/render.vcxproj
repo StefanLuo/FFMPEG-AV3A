@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C695825D-1A7B-3D8C-AE07-1E89165A55A5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>render</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">render.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">render</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">render.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">render</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">render.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">render</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">render.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">render</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\resources;D:\adm-render;D:\adm-render\resources\eigen;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\adm-render\CMakeFiles\e120aadc622d1354f9c6ef45411eee3f\resources.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\adm-render\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\Debug\adm_render_resource_embedder.exe Quadrature.dat &gt; D:/adm-render/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\utils\Debug\adm_render_resource_embedder.exe;D:\adm-render\resources\Quadrature.dat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\adm-render\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\Release\adm_render_resource_embedder.exe Quadrature.dat &gt; D:/adm-render/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\utils\Release\adm_render_resource_embedder.exe;D:\adm-render\resources\Quadrature.dat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\adm-render\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\MinSizeRel\adm_render_resource_embedder.exe Quadrature.dat &gt; D:/adm-render/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\utils\MinSizeRel\adm_render_resource_embedder.exe;D:\adm-render\resources\Quadrature.dat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\adm-render\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\RelWithDebInfo\adm_render_resource_embedder.exe Quadrature.dat &gt; D:/adm-render/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\utils\RelWithDebInfo\adm_render_resource_embedder.exe;D:\adm-render\resources\Quadrature.dat;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\adm-render\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/adm-render/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/adm-render/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/adm-render/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/adm-render/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\adm-render\src\bs2051.cpp" />
+    <ClCompile Include="D:\adm-render\src\bs2051_layouts.cpp" />
+    <ClCompile Include="D:\adm-render\src\common\facets.cpp" />
+    <ClCompile Include="D:\adm-render\src\common\geom.cpp" />
+    <ClCompile Include="D:\adm-render\src\common\point_source_panner.cpp" />
+    <ClCompile Include="D:\adm-render\src\decorrelate.cpp" />
+    <ClCompile Include="D:\adm-render\src\direct_speakers\gain_calculator_direct_speakers.cpp" />
+    <ClCompile Include="D:\adm-render\src\direct_speakers\mapping_rules.cpp" />
+    <ClCompile Include="D:\adm-render\src\dsp\block_convolver.cpp" />
+    <ClCompile Include="D:\adm-render\src\dsp\block_convolver_impl.cpp" />
+    <ClCompile Include="D:\adm-render\src\dsp\delay_buffer_impl.cpp" />
+    <ClCompile Include="D:\adm-render\src\dsp\variable_block_size_impl.cpp" />
+    <ClCompile Include="D:\adm-render\src\gain_calculators.cpp" />
+    <ClCompile Include="D:\adm-render\src\fft_kiss.cpp" />
+    <ClCompile Include="D:\adm-render\src\hoa\gain_calculator_hoa.cpp" />
+    <ClCompile Include="D:\adm-render\src\hoa\hoa.cpp" />
+    <ClCompile Include="D:\adm-render\src\layout.cpp" />
+    <ClCompile Include="D:\adm-render\src\screen.cpp" />
+    <ClCompile Include="D:\adm-render\src\object_based\extent.cpp" />
+    <ClCompile Include="D:\adm-render\src\object_based\gain_calculator_objects.cpp" />
+    <ClCompile Include="D:\adm-render\src\warnings.cpp" />
+    <ClInclude Include="D:\adm-render\resources.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\adm-render\ZERO_CHECK.vcxproj">
+      <Project>{B38D4553-639F-3246-8C8A-688561296DC3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\adm-render\utils\adm_render_resource_embedder.vcxproj">
+      <Project>{5868F8B3-4DC2-35EA-85C8-EA8F1E055EC1}</Project>
+      <Name>adm_render_resource_embedder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

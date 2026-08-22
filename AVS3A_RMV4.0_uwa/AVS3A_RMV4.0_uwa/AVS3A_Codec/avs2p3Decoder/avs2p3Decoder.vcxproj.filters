@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="threeD\attf_head.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\general_decoder_3D.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\general_decoder_frame.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\objdata_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\objgeneral_decoder_frame.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="threeD\objInfo_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\common.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\degetcmdarg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\i2r_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\i2r_ec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\i2r_lpc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ky_midside.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ky_rice.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lossless_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\lwt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\sam_bitstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\specrec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\avs2BweDecMDFT.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\decode_hf.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable128.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable256.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable512.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable1024.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable2048.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftimdfttable4096.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\mdftmultiblockanalysis_dec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\bwedec\supermdftanalysis_dec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\avs2decmain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\bitstream.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\codebook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\crc_16.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\floor1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\general_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\iir32resample.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\info.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\lfdec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\maxcorr3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\mc_rom1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\pca.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\registry.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\res0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\resampler.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\sharedbook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\tns_dec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general\decode\wavefiletools.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="source\avs2p3_decoder.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="threeD\attf_head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeD\general_decoder_3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="threeD\general_decoder_frame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AFdataio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AFheader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AFmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AFpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AIpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\AUpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\ESpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\FImsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\FIpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\FLmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\FNmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\MSmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\nucleus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\SPmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\STmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\sysOS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\UTmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\UTpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\UTtypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\VRmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp\WVpar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="libAFsp\Include\libtsp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\av3dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\degetcmdarg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\funcs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\i2r_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\i2r_ec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\i2r_lpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\ky_midside.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\ky_rice.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\lwt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\avs2BweDecMDFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\decode_hf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\mdftimdft4096.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\mdftimdfttable2048.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\mdftmultiblockanalysis_dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\bwedec\supermdftanalysis_dec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\avs2audio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\avs2BweDecMDFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\avs2BweEncMDFT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\avs2decmain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\bitrate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\bitstream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\codebook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\codec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\crc_16.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\FloatFR.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\floor_all.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\floor_books.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\general.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\highlevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\iir32resample.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\lfdec.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\lfenc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\maxcorr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\mc_rom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\mdctf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\os_types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\pca.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\psy.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\psych_44.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\registry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\res_books_uncoupled.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\resampler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\residue_44u.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\scales.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\setup_44.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\setup_44u.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\sndfile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general\decode\streaminfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="header\avs2p3_decoder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

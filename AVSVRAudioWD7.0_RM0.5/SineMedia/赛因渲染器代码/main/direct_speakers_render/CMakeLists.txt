@@ -1,0 +1,3 @@
+
+add_executable(direct_speakers_render direct_speakers_render.cpp)
+target_link_libraries(direct_speakers_render PRIVATE render adm)

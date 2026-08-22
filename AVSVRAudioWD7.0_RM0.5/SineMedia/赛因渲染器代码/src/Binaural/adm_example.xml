@@ -1,0 +1,5 @@
+ </audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00051001" audioChannelFormatName="LeftEar" typeLabel="0005" typeDefinition="Binaural">
+        </audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00051002" audioChannelFormatName="RightEar" typeLabel="0005" typeDefinition="Binaural">
+        </audioChannelFormat>

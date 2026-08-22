@@ -1,0 +1,34 @@
+</audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00021001" audioChannelFormatName="WeirdMid" typeLabel="0002" typeDefinition="Matrix">
+          <audioBlockFormat audioBlockFormatID="AB_00021001_00000001">
+            <matrix>
+              <coefficient gain="0.2" phase="-90" delay="0.1">AC_00010001</coefficient>
+              <coefficient gainVar="gv1" phaseVar="pv1" delayVar="dv1">AC_00010002</coefficient>
+            </matrix>
+          </audioBlockFormat>
+        </audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00021002" audioChannelFormatName="WeirdSide" typeLabel="0002" typeDefinition="Matrix">
+          <audioBlockFormat audioBlockFormatID="AB_00021002_00000001">
+            <matrix>
+              <coefficient gain="0.2" phase="90" delay="0.2">AC_00010001</coefficient>
+              <coefficient gainVar="gv2" phaseVar="pv2" delayVar="dv2">AC_00010002</coefficient>
+            </matrix>
+          </audioBlockFormat>
+        </audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00021101" audioChannelFormatName="WeirdMidDecode" typeLabel="0002" typeDefinition="Matrix">
+          <audioBlockFormat audioBlockFormatID="AB_00021101_00000001">
+            <matrix>
+              <coefficient gain="0.2" phase="90" delay="0.0">AC_00021001</coefficient>
+              <coefficient gainVar="-gv1" phaseVar="-pv1" delayVar="dv3">AC_00021002</coefficient>
+            </matrix>
+            <outputChannelIDRef>AC_00010001</outputChannelIDRef>
+          </audioBlockFormat>
+        </audioChannelFormat>
+        <audioChannelFormat audioChannelFormatID="AC_00021102" audioChannelFormatName="WeirdSideDecode" typeLabel="0002" typeDefinition="Matrix">
+          <audioBlockFormat audioBlockFormatID="AB_00021102_00000001">
+            <matrix>
+              <coefficient gain="-0.2" phase="90" delay="0.0">AC_00021001</coefficient>
+              <coefficient gainVar="gv2" phaseVar="pv2" delayVar="dv4">AC_00021002</coefficient>
+            </matrix>
+            <outputChannelIDRef>AC_00010002</outputChannelIDRef>
+          </audioBlockFormat>

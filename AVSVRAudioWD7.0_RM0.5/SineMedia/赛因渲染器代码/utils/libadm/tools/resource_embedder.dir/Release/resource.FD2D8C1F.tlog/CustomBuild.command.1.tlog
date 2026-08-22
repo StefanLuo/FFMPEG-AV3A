@@ -1,0 +1,10 @@
+^D:\ADM-RENDER\UTILS\LIBADM\TOOLS\CMAKELISTS.TXT
+setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/utils/libadm/tools/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

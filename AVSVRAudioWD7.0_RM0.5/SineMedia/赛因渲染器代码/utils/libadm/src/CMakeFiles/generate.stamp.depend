@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/adm-render/utils/libadm/src/CMakeLists.txt
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCXXCompilerFlag.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/GenerateExportHeader.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/exportheader.cmake.in

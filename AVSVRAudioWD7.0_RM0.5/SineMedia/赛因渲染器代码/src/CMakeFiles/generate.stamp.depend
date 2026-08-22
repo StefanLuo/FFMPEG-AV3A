@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/adm-render/src/CMakeLists.txt
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCCompilerFlag.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCXXCompilerFlag.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/CheckCXXSourceCompiles.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/GenerateExportHeader.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/Internal/CheckCompilerFlag.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake
+D:/工具/cmake-3.22.1-windows-x86_64/cmake-3.22.1-windows-x86_64/share/cmake-3.22/Modules/exportheader.cmake.in

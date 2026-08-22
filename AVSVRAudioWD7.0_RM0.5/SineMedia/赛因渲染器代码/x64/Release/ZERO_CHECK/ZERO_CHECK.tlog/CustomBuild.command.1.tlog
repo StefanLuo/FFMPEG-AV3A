@@ -1,0 +1,10 @@
+^D:\ADM-RENDER\CMAKEFILES\6E5E1DF4C2A10BDCC1207F0B0F89A256\GENERATE.STAMP.RULE
+setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/adm-render/adm_render.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

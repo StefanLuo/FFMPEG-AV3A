@@ -1,0 +1,34 @@
+include(CMakeFindDependencyMacro)
+
+@PACKAGE_INIT@
+
+set_and_check(@PROJECT_NAME@_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/@INSTALL_INCLUDE_DIR@")
+set_and_check(@PROJECT_NAME@_LIBRARY_DIRS "${PACKAGE_PREFIX_DIR}/@INSTALL_LIB_DIR@")
+
+find_dependency(Boost 1.57)
+
+if(${render_USE_STATIC_LIBS})
+
+  if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/renderTargetsStatic.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/renderTargetsStatic.cmake")
+  else()
+    message(FATAL_ERROR "Could not find static version of render.")
+  endif()
+elseif(${render_USE_SHARED_LIBS})
+  if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/renderTargetsShared.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/renderTargetsShared.cmake")
+  else()
+    message(FATAL_ERROR "Could not find shared version of render.")
+  endif()
+else()
+  if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/renderTargetsShared.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/renderTargetsShared.cmake")
+  else()
+    include("${CMAKE_CURRENT_LIST_DIR}/renderTargetsStatic.cmake")
+  endif()
+endif()
+
+check_required_components(render)
+
+get_target_property(render_LOCATION_ONLY_FOR_DISPLAY render LOCATION)
+message(STATUS "Found render library ${render_VERSION}: ${render_LOCATION_ONLY_FOR_DISPLAY}")

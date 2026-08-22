@@ -1,0 +1,3 @@
+
+add_executable(objects_render objects_render.cpp audio_render_processor.cpp multichannel_convolver.cpp)
+target_link_libraries(objects_render PRIVATE render adm)

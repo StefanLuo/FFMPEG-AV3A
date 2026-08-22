@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C838BE0-E06F-332A-A116-7C0A5A4D5D52}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>adm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\utils\libadm\src\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">adm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">adm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\utils\libadm\src\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">adm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">adm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\utils\libadm\src\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">adm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">adm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\utils\libadm\src\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">adm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">adm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\adm-render\include;D:\adm-render\utils\libadm\include;D:\adm-render\utils\libadm;C:\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\adm-render\CMakeFiles\236fed13eb495bd6c97571fc391e045b\resources.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\adm-render\utils\libadm\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\libadm\tools\Debug\resource_embedder.exe common_definitions.xml &gt; D:/adm-render/utils/libadm/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\utils\libadm\tools\Debug\resource_embedder.exe;D:\adm-render\utils\libadm\resources\common_definitions.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\utils\libadm\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\adm-render\utils\libadm\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\libadm\tools\Release\resource_embedder.exe common_definitions.xml &gt; D:/adm-render/utils/libadm/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\utils\libadm\tools\Release\resource_embedder.exe;D:\adm-render\utils\libadm\resources\common_definitions.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\utils\libadm\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\adm-render\utils\libadm\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\libadm\tools\MinSizeRel\resource_embedder.exe common_definitions.xml &gt; D:/adm-render/utils/libadm/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\utils\libadm\tools\MinSizeRel\resource_embedder.exe;D:\adm-render\utils\libadm\resources\common_definitions.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\utils\libadm\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running resource embedder.</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\adm-render\utils\libadm\resources
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\adm-render\utils\libadm\tools\RelWithDebInfo\resource_embedder.exe common_definitions.xml &gt; D:/adm-render/utils/libadm/resources.hpp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\utils\libadm\tools\RelWithDebInfo\resource_embedder.exe;D:\adm-render\utils\libadm\resources\common_definitions.xml;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\utils\libadm\resources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\adm-render\utils\libadm\src\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/adm-render/utils/libadm/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/utils/libadm/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\adm-render\utils\libadm\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/adm-render/utils/libadm/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/utils/libadm/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\adm-render\utils\libadm\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/adm-render/utils/libadm/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/utils/libadm/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\adm-render\utils\libadm\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/adm-render/utils/libadm/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\bin\cmake.exe -SD:/adm-render -BD:/adm-render --check-stamp-file D:/adm-render/utils/libadm/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\CheckCXXCompilerFlag.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\GenerateExportHeader.cmake;D:\工具\cmake-3.22.1-windows-x86_64\cmake-3.22.1-windows-x86_64\share\cmake-3.22\Modules\exportheader.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\adm-render\utils\libadm\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\adm-render\utils\libadm\src\document.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\errors.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\common_definitions.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_programme.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_content.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_object.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_pack_format.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_channel_format.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_stream_format.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_track_format.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_track_uid.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_programme_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_content_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_object_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_pack_format_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_channel_format_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_track_format_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_stream_format_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_track_uid_id.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_direct_speakers.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_matrix.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_objects.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_hoa.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_block_format_binaural.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_object_interaction.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\audio_pack_format_hoa.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\time.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\channel_lock.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\frequency.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\gain_interaction_range.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\jump_position.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\loudness_metadata.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\object_divergence.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\position.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\position_interaction_range.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\screen_edge_lock.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\speaker_position.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\type_descriptor.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\elements\format_descriptor.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\utilities\block_duration_assignment.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\utilities\copy.cpp">
+      <ObjectFileName>$(IntDir)/utilities/copy.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\adm-render\utils\libadm\src\utilities\id_assignment.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\utilities\object_creation.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\path.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\private\copy.cpp">
+      <ObjectFileName>$(IntDir)/private/copy.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\adm-render\utils\libadm\src\private\rapidxml_wrapper.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\private\rapidxml_formatter.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\private\xml_writer.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\private\xml_parser.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\detail\hex_values.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\detail\id_assigner.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\parse.cpp" />
+    <ClCompile Include="D:\adm-render\utils\libadm\src\write.cpp" />
+    <ClInclude Include="D:\adm-render\utils\libadm\resources.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\adm-render\ZERO_CHECK.vcxproj">
+      <Project>{B38D4553-639F-3246-8C8A-688561296DC3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\adm-render\utils\libadm\tools\resource_embedder.vcxproj">
+      <Project>{FD2D8C1F-82FF-3592-87C1-91219770F9CC}</Project>
+      <Name>resource_embedder</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

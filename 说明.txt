@@ -1,0 +1,12 @@
+编解码器源码：
+AVS3A_RMV4.0.zip 									编解码器参考代码(王老师)
+AVS3A_RMV4.0_uwa.zip								编解码器参考代码(uwa申请返回版本)
+
+ffmpeg封装补丁源码：
+Audio_Vivid Encapsulation tools.zip					基于ffmpeg补丁的源码(uwa申请返回版本)
+Audio+Vivid封装工具.zip 							基于ffmpeg补丁的源码(建超版本)
+
+渲染参考源码：
+Audio_Vivid_Binaural_Renderer_v1.3_stable.zip		双耳渲染参考代码
+AVSVRAudioWD7.0_RM0.5.rar							扬声器渲染参考代码
+

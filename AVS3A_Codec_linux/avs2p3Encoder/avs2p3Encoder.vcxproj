@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3DB9B236-9EDF-41D1-97EE-C3F8E09BC2C4}</ProjectGuid>
+    <RootNamespace>avs2p3Encoder</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\include;.\libAFsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>.\libAFsp;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <StackReserveSize>50000000</StackReserveSize>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\libAFsp\include;..\libavs2p3\encode;..\libavs2p3\bweenc;.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LL_OPTIMIZATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>50000000</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\libAFsp\include;..\libavs2p3\encode;..\libavs2p3\bweenc;.\include;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;LL_OPTIMIZATION;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="general\bweenc\avs2BweDecMDFT.h" />
+    <ClInclude Include="general\bweenc\avs2BweEncMDFT.h" />
+    <ClInclude Include="general\bweenc\code_hf.h" />
+    <ClInclude Include="general\bweenc\dec.h" />
+    <ClInclude Include="general\bweenc\decoder.h" />
+    <ClInclude Include="general\bweenc\decode_hf.h" />
+    <ClInclude Include="general\bweenc\encoder.h" />
+    <ClInclude Include="general\bweenc\mdftimdft4096.h" />
+    <ClInclude Include="general\bweenc\mdftimdfttable2048.h" />
+    <ClInclude Include="general\bweenc\mdftmultiblockanalysis.h" />
+    <ClInclude Include="general\bweenc\mdftmultiblockanalysis_dec.h" />
+    <ClInclude Include="general\bweenc\supermdftanalysis.h" />
+    <ClInclude Include="general\bweenc\supermdftanalysis_dec.h" />
+    <ClInclude Include="general\encode\avs2audio.h" />
+    <ClInclude Include="general\encode\avs2encmain.h" />
+    <ClInclude Include="general\encode\bitrate.h" />
+    <ClInclude Include="general\encode\bitstream.h" />
+    <ClInclude Include="general\encode\codebook.h" />
+    <ClInclude Include="general\encode\codec.h" />
+    <ClInclude Include="general\encode\crc_16.h" />
+    <ClInclude Include="general\encode\filterbank.h" />
+    <ClInclude Include="general\encode\FloatFR.h" />
+    <ClInclude Include="general\encode\floor_all.h" />
+    <ClInclude Include="general\encode\floor_books.h" />
+    <ClInclude Include="general\encode\general.h" />
+    <ClInclude Include="general\encode\highlevel.h" />
+    <ClInclude Include="general\encode\iir32resample.h" />
+    <ClInclude Include="general\encode\lfenc.h" />
+    <ClInclude Include="general\encode\masking.h" />
+    <ClInclude Include="general\encode\maxcorr.h" />
+    <ClInclude Include="general\encode\mc_rom.h" />
+    <ClInclude Include="general\encode\mdftmultiblockanalysis_dec.h" />
+    <ClInclude Include="general\encode\os_types.h" />
+    <ClInclude Include="general\encode\pca.h" />
+    <ClInclude Include="general\encode\psy.h" />
+    <ClInclude Include="general\encode\psych_44.h" />
+    <ClInclude Include="general\encode\registry.h" />
+    <ClInclude Include="general\encode\resampler.h" />
+    <ClInclude Include="general\encode\residue_44u.h" />
+    <ClInclude Include="general\encode\res_books_uncoupled.h" />
+    <ClInclude Include="general\encode\scales.h" />
+    <ClInclude Include="general\encode\setup_44.h" />
+    <ClInclude Include="general\encode\setup_44u.h" />
+    <ClInclude Include="general\encode\sndfile.h" />
+    <ClInclude Include="general\encode\streaminfo.h" />
+    <ClInclude Include="general\encode\tns1.h" />
+    <ClInclude Include="include\av3enc.h" />
+    <ClInclude Include="include\avs2p3_encoder.h" />
+    <ClInclude Include="include\getcmdarg.h" />
+    <ClInclude Include="include\i2r_ec.h" />
+    <ClInclude Include="include\i2r_encoder.h" />
+    <ClInclude Include="include\i2r_lpc.h" />
+    <ClInclude Include="include\ky_midside.h" />
+    <ClInclude Include="include\ky_rice.h" />
+    <ClInclude Include="include\lwt.h" />
+    <ClInclude Include="threeD\enc.h" />
+    <ClInclude Include="threeD\general_encoder_3D.h" />
+    <ClInclude Include="threeD\threeD.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="general\bweenc\avs2BweDecMDFT.c" />
+    <ClCompile Include="general\bweenc\avs2BweEncMDFT.c" />
+    <ClCompile Include="general\bweenc\code_hf.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable1024.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable128.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable2048.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable256.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable4096.c" />
+    <ClCompile Include="general\bweenc\mdftimdfttable512.c" />
+    <ClCompile Include="general\bweenc\mdftmultiblockanalysis.c" />
+    <ClCompile Include="general\bweenc\mdftmultiblockanalysis_dec.c" />
+    <ClCompile Include="general\bweenc\supermdftanalysis.c" />
+    <ClCompile Include="general\encode\bitrate.c" />
+    <ClCompile Include="general\encode\bitstream.c" />
+    <ClCompile Include="general\encode\codebook.c" />
+    <ClCompile Include="general\encode\codectypeselect.c" />
+    <ClCompile Include="general\encode\crc_16.c" />
+    <ClCompile Include="general\encode\floor1.c" />
+    <ClCompile Include="general\encode\general_encoder.c" />
+    <ClCompile Include="general\encode\iir32resample.c" />
+    <ClCompile Include="general\encode\info.c" />
+    <ClCompile Include="general\encode\lfenc.c" />
+    <ClCompile Include="general\encode\maxcorr3.c" />
+    <ClCompile Include="general\encode\mc_rom1.c" />
+    <ClCompile Include="general\encode\pca.c" />
+    <ClCompile Include="general\encode\psy.c" />
+    <ClCompile Include="general\encode\registry.c" />
+    <ClCompile Include="general\encode\res0.c" />
+    <ClCompile Include="general\encode\resampler.c" />
+    <ClCompile Include="general\encode\sharedbook.c" />
+    <ClCompile Include="general\encode\tns.c" />
+    <ClCompile Include="general\encode\wavefiletools.c" />
+    <ClCompile Include="src\avs2p3_encoder.c" />
+    <ClCompile Include="src\bs_util.c" />
+    <ClCompile Include="src\encframe.c" />
+    <ClCompile Include="src\getcmdarg.c" />
+    <ClCompile Include="src\i2r_ec.c" />
+    <ClCompile Include="src\i2r_encoder.c" />
+    <ClCompile Include="src\i2r_lpc.c" />
+    <ClCompile Include="src\ky_midside.c" />
+    <ClCompile Include="src\ky_rice.c" />
+    <ClCompile Include="src\lossless_encoder.c" />
+    <ClCompile Include="src\lwt.c" />
+    <ClCompile Include="threeD\general_encoder_3D.c" />
+    <ClCompile Include="threeD\objgeneral_encoder_3D.c" />
+    <ClCompile Include="threeD\ob_raw_data.c" />
+    <ClCompile Include="threeD\ob_raw_Info.c" />
+    <ClCompile Include="threeD\threeD.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
